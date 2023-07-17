@@ -1,4 +1,4 @@
-# <img src="src/assets/Logo_color.png" width="40" height="40"  margin-top="100"> Wallet Keeper
+# <img src="https://github.com/KDT1-FE/KDT5-M6/assets/122417731/fe3cbd44-e412-4e3d-bb2f-87de1016af3c" width="40" height="40"  margin-top="100"> Wallet Keeper
 
 # 배포사이트
 
