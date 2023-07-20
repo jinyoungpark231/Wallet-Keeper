@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // API 공통 영역 변수
 const api = axios.create({
-  baseURL: 'https://chickenlecture.xyz/api',
+  baseURL: 'http://52.78.195.183:3003/api',
   headers: {
     'Content-Type': 'application/json'
   }
