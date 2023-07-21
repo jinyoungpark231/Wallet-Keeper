@@ -139,7 +139,7 @@ function Chart({ date }: ICalendarProps) {
   return (
     <ChartGraph>
       {/* 라이브러리 문법 */}
-      <Bar data={chartData} options={chartOptions} width="90%" height="60%" />
+      <Bar data={chartData} options={chartOptions} width="80%" height="50%" />
     </ChartGraph>
   );
 }
@@ -147,7 +147,7 @@ function Chart({ date }: ICalendarProps) {
 const ChartGraph = styled.div`
   margin: auto;
   margin-top: 50px;
-  /* margin-bottom: 5px; */
+  margin-bottom: 5px;
   width: 80%;
   max-width: 900px;
 `;

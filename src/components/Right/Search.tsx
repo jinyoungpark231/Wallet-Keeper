@@ -3,6 +3,7 @@ import List from '../common/List';
 import { IContentExtend, getSearch } from '../../lib/API';
 import { theme } from '../../styles/theme';
 import { ChangeEvent, useState } from 'react';
+import SearchIcon from '../../assets/search-grey.png';
 
 interface IReadProps {
   setChange: React.Dispatch<React.SetStateAction<boolean>>;
@@ -49,7 +50,7 @@ function Search({ setChange, selectedDate }: IReadProps) {
             onKeyDown={OnKeyPress}
           />
           <SearchImg
-            src="src/assets/search-grey.png"
+            src={SearchIcon}
             alt="검색로고"
             onClick={ButtonClick}
           />
