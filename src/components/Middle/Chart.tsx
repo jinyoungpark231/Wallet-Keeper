@@ -147,7 +147,7 @@ function Chart({ date }: ICalendarProps) {
 const ChartGraph = styled.div`
   margin: auto;
   margin-top: 50px;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
   width: 80%;
   max-width: 900px;
 `;
