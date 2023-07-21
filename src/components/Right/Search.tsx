@@ -39,6 +39,7 @@ function Search({ setChange, selectedDate }: IReadProps) {
 
   return (
     <Container>
+      <Blur></Blur>
       <TopContain>
         <Inputs>
           <Input
@@ -48,7 +49,7 @@ function Search({ setChange, selectedDate }: IReadProps) {
             onKeyDown={OnKeyPress}
           />
           <SearchImg
-            src="../public/imgs/search-grey.png"
+            src="src/assets/search-grey.png"
             alt="검색로고"
             onClick={ButtonClick}
           />
@@ -113,14 +114,23 @@ const Count = styled.div`
   margin-top: 20px;
 `;
 const Container = styled.div`
+  position: relative;
   background-color: ${theme.colors.white};
   height: 100%;
   width: 100%;
 `;
+const Blur = styled.div`
+  position: absolute;
+  bottom: 85px;
+  right: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(transparent, ${theme.colors.white});
+`;
+
 const TopContain = styled.div`
   width: 100%;
   height: 25%;
-  gap: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,6 +176,7 @@ const SearchImg = styled.img`
 const Btns = styled.div`
   width: 100%;
   padding: 0 8%;
+  margin-top: 10px;
   display: flex;
   gap: 10px;
 `;
@@ -202,7 +213,8 @@ const UnactiveBtn = styled.button`
 `;
 
 const ListContain = styled.div`
-  height: 75%;
+  /* position: relative; */
+  height: 62%;
   width: 95%;
   margin: auto;
   margin-top: 10px;
